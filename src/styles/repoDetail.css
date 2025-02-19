@@ -1,0 +1,75 @@
+.repo-detail {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.repo-detail h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.readme-content {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.6;
+  color: #2d2d2d;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 60vh;
+}
+
+.readme-content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  background-color: #f1f1f1;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .repo-detail {
+    padding: 0.8rem;
+  }
+
+  .repo-detail h2 {
+    font-size: 1.8rem;
+  }
+
+  .readme-content {
+    padding: 0.8rem;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .repo-detail {
+    padding: 0.5rem;
+  }
+
+  .repo-detail h2 {
+    font-size: 1.5rem;
+  }
+
+  .readme-content {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    max-height: 50vh;
+  }
+}

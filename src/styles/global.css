@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden ;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px;
+}
+
+.repo-list {
+  margin-top: 20px;
+}
+
+.repo-item {
+  cursor: pointer;
+  padding: 10px;
+  background: #f4f4f4;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.repo-item:hover {
+  background: #ddd;
+}
+
+.repo-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.app-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* Gunakan rem atau px untuk ukuran gap */
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .app-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
